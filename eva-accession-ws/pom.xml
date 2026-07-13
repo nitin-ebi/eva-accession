@@ -11,7 +11,7 @@
     </parent>
 
     <artifactId>eva-accession-ws</artifactId>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
 
     <dependencies>
         <dependency>
@@ -93,20 +93,6 @@
                 </executions>
             </plugin>
         </plugins>
-
-        <testResources>
-            <testResource>
-                <directory>src/test/resources/</directory>
-                <filtering>true</filtering>
-            </testResource>
-        </testResources>
-
-        <resources>
-            <resource>
-                <directory>src/main/resources/</directory>
-                <filtering>true</filtering>
-            </resource>
-        </resources>
 
     </build>
 

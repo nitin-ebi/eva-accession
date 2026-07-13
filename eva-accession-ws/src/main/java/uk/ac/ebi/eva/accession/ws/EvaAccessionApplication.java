@@ -25,7 +25,6 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration;
 import org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration;
 import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
-import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.Import;
 import uk.ac.ebi.eva.accession.core.configuration.ContiguousIdBlocksDataSourceConfiguration;
 
@@ -38,7 +37,7 @@ import uk.ac.ebi.eva.accession.core.configuration.ContiguousIdBlocksDataSourceCo
         BatchAutoConfiguration.class
 })
 @Import({ContiguousIdBlocksDataSourceConfiguration.class})
-public class EvaAccessionApplication extends SpringBootServletInitializer {
+public class EvaAccessionApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(EvaAccessionApplication.class, args);
